@@ -25,14 +25,15 @@ namespace AWSLambda1
              string connectionString = "";
              connectionString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=lattuceorcl.cdbrh6uczknc.eu-west-1.rds.amazonaws.com)(Port=1521))(CONNECT_DATA=(SID=orcl)));User Id=davidken;Password=DefaultPwd;Persist Security Info=True;";
              _con.ConnectionString = connectionString;
-             _con.Open();
+            // _con.Open();
 
 
-             Oracle.ManagedDataAccess.Client.OracleCommand cmd = _con.CreateCommand();
-             cmd.CommandText = "SELECT test_column FROM test_table";
-             string val = cmd.ExecuteScalar().ToString();
+            //  Oracle.ManagedDataAccess.Client.OracleCommand cmd = _con.CreateCommand();
+            //  cmd.CommandText = "SELECT test_column FROM test_table";
+            //   string val = cmd.ExecuteScalar().ToString();
 
-             return val;
+            //return val;
+            return "hlkjhkl";
         }
     }
 }
