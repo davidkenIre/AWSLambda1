@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Oracle.ManagedDataAccess;
+using Newtonsoft.Json;
 
 using Amazon.Lambda.Core;
 
@@ -19,7 +20,7 @@ namespace AWSLambda1
         /// <param name="input"></param>
         /// <param name="context"></param>
         /// <returns></returns>
-        public string GetStringFromDB(string input, ILambdaContext context)
+        public string GetStringFromDB(ILambdaContext context)
         {
              Oracle.ManagedDataAccess.Client.OracleConnection _con = new Oracle.ManagedDataAccess.Client.OracleConnection();
              string connectionString = "";
@@ -33,7 +34,10 @@ namespace AWSLambda1
             //   string val = cmd.ExecuteScalar().ToString();
 
             //return val;
-            return "hlkjhkl";
+             return "hlkjhkl";
+
+
+
         }
     }
 }
