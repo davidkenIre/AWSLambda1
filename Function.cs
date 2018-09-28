@@ -34,7 +34,7 @@ namespace AWSLambda1
             //   string val = cmd.ExecuteScalar().ToString();
 
             //return val;
-             return "hlkjhkl";
+             return "Hello World";
 
 
 
